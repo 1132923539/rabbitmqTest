@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    virtual-host: soda4
+    username: soda
+    password: soda
+    addresses: 144.202.26.65:5672
