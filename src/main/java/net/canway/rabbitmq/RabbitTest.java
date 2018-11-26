@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
 
 /**
  * @author eltons,  Date on 2018-11-12.
@@ -22,6 +23,13 @@ public class RabbitTest {
 
     public void testSend(){
         for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                System.out.println();
+                System.out.println();
+            }).start();
+
+            new Hashtable<String, String>();
+//            new ThreadPoolExecutor().submit()
             new HashSet<String>();
             rabbitTemplate.convertAndSend("exchange_test1","routing_test1",new HashMap<String,String>(20));
         }
@@ -34,3 +42,5 @@ public class RabbitTest {
         System.out.println(s);
     }
 }
+
+
