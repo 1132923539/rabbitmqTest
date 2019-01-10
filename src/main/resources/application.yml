@@ -3,4 +3,6 @@ spring:
     virtual-host: soda4
     username: soda
     password: soda
-    addresses: 144.202.26.65:5672
+    addresses: 192.168.229.139:5672
+server:
+  port: 8080

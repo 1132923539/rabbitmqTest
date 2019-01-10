@@ -17,4 +17,10 @@ public class RabbitmqApplicationTests {
         rabbitTest.testSend();
     }
 
+    @Test
+    public void receive() {
+        String s = "";
+        rabbitTest.testReceive(s);
+    }
+
 }
